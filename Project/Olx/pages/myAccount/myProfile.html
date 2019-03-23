@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX </title>
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <link href="../../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../assets/js/bootstrap/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="Main">
+
+        <div class="header" id="myHeader">
+
+            <a href="./index.html" id="img"><img src="../../assets/img/olx-617x340.png" height="100px"
+                    width="100px"></a>
+            <h3 id="title">Pakistan Largest Market Place</h3>
+            <button class="account" onclick="window.location='../afterSignIn/Home.html'">Home</button>
+            <button class="account" onclick="window.location='../myAccount/myProfile.html'">My Profile</button>
+            <button class="account" onclick="window.location='../myAccount/myAccount.html'">My Account</button>
+            <button class="account" onclick="window.location='My account/account.html'">Submit an Add</button>
+            <button class="SubmitAD" onClick="signOut()">Sign Out</button>
+        </div>
+        <div style="text-align:center">
+            <h1>Profile</h1>
+        </div>
+        <div class="card-group" id="profile" style="text-align:center"></div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script src="./myProfile.js"></script>
+</body>
+
+</html>

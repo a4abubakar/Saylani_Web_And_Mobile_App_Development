@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX</title>
+    <link href="../../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./submitAdd.css">
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../assets/js/bootstrap/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="Fullpage">
+        <div class="header">
+            <a href="../index.html"><img src="../../assets/img/olx-617x340.png" height="100px" width="100px"></a>
+            <h3 id="title">Pakistan Largest Market Place</h3>
+            <button class="account" onclick="window.location='./myAccount.html'">My Account</button>
+            <button class="SubmitAD" onclick="signOut()">Logout</button>
+        </div>
+        <hr>
+        <h3 id="title2">Submit An Ad</h3>
+        <div class="AdFormMain container ">
+
+            <div class="form-group col-md-12 col-sm-12">
+                <label for="adTitle">Ad Title</label>
+                <input type="text" class="form-control" id="adTitle" required>
+            </div>
+
+            <div class="form-group col-md-12">
+                <label for="Category">Category</label>
+                <select id="Category" class="form-control" required>
+                    <option selected value="">Select Category</option>
+                    <option value="Mobiles">Mobiles</option>
+                    <option value="Cars">Cars</option>
+                    <option value="Bikes">Bikes</option>
+                    <option value="Furniture">Furniture</option>
+                    <option value="Crockery">Crockery</option>
+                    <option value="Kids">Kids</option>
+
+                </select>
+            </div>
+
+            <div class="form-group col-md-12">
+                <label for="AdDescription">Ad Description</label>
+                <textarea class="form-control" placeholder="Include the brand, model, age and any included accessories."
+                    id="AdDescription" required></textarea>
+            </div>
+            <div class="form-group col-md-12 ">
+                <div class="form-group ">
+                    <label for="UploadImage">Upload Photos</label>
+                    <input type="file" class="form-control-file" id="UploadImage" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Number">Price</label>
+                    <input type="number" class="form-control" id="price" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control" id="Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Number">Number</label>
+                    <input type="number" class="form-control" id="Number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <select id="city" class="form-control" required>
+                        <option selected value="">Choose City</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Peshawar">Peshawar</option>
+                    </select>
+                </div>
+
+                <p id="error">
+                    Error
+                </p>
+                <p>
+
+                    By clicking 'Submit' you confirm that you have carefully read and understood all the facts,
+                    statements and conditions stated in the Terms of Use & Posting Rules of our website to which you
+                    unconditionally agree and accept as true and correct and constituting a binding agreement between
+                    us.
+                </p>
+                <button type="button" class="btn btn-primary mb-2" onClick="submitAd()">SubmitAd</button>
+            </div>
+        </div>
+</body>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+<script src="./submitAdd.js"></script>
+</body>
+
+</html>

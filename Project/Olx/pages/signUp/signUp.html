@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX</title>
+    <link href="../../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./signUp.css">
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../assets/js/bootstrap/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="Fullpage">
+        <div class="header container">
+            <a href="../index.html"><img src="../../assets/img/logo.png" height="100px" width="100px"></a>
+            <h3 id="title">Pakistan Largest Market Place</h3>
+        </div>
+
+        <div class="container jumbotron Main">
+            <h1 id="SignUpTitle">Sign Up</h1>
+            <hr>
+
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" id="email">
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="password">
+
+            <label for="image"><b>Image</b></label>
+            <input type="file" placeholder="Attach Image" id="image">
+            <p id="error"></p>
+            <a href="../signIn/signIn.html">Already Have an Account</a>
+            <div class="clearfix">
+                <button onClick="signUp()" class="signupbtn">Sign Up</button>
+            </div>
+            <div class="col-md-12">
+                <div class="loader" id="loaders"></div>
+            </div>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="./signUp.js"></script>
+</body>
+
+</html>

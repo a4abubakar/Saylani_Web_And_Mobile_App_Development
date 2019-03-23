@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX</title>
+    <link href="../../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./conversation.css">
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../assets/js/bootstrap/bootstrap.js"></script>
+
+</head>
+
+<body onload="gettingRooms()">
+
+    <div class="header container">
+        <a href="../../index.html"><img src="../../assets/img/olx-617x340.png" height="100px" width="100px"></a>
+        <h3 id="title">Pakistan Largest Market Place</h3>
+        <button class="account" onClick="window.location ='../afterSignIn/Home.html'">Home</button>
+        <button class="SubmitAD" onClick="window.location='../myAccount/submitAdd.html'">Submit An Ad</button>
+        <button class="SubmitAD" onClick="window.location='../Message/messageMain.html'">My Messages</button>
+        <button class="SubmitAD" onClick="signOut()">Logout</button>
+    </div>
+
+    <div class="container" id="chats">
+        <h1 style="text-align:center;" id="Heading">YOUR CHATS</h1>
+        <hr id="hr">
+        <div id="ChatMain"></div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script src="./mainConversation.js"></script>
+</body>
+
+</html>

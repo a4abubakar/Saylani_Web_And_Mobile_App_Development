@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX </title>
+    <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+    <link href="../../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../assets/js/bootstrap/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="manifest" href="../../manifest.json">
+
+</head>
+
+<body>
+    <div class="Main">
+
+        <div class="header" id="myHeader">
+
+            <a href="./index.html" id="img"><img src="../../assets/img/olx-617x340.png" height="100px"
+                    width="100px"></a>
+            <h3 id="title">Pakistan Largest Market Place</h3>
+            <button class="account" onclick="JavaScript:void(0)">Home</button>
+            <button class="account" onclick="window.location='../myAccount/myProfile.html'">My Profile</button>
+            <button class="account" onclick="window.location='../myAccount/myAccount.html'">My Account</button>
+            <button class="account" onclick="window.location='../myAccount/submitAdd.html'">Submit an Add</button>
+            <button class="SubmitAD" onClick="signOut()">Sign Out</button>
+        </div>
+
+        <div class="SearchDiv container jumbotron">
+
+            <div class="searchTab">
+                <input type="search" id="txtSearch" placeholder="Search" style="border:none">
+                <img src="../../assets/img/search.png" onclick="searchAds()" id="searchImg">
+            </div>
+
+        </div>
+        <div class="titleDiv">
+            <h1 class="heading container" id="heading" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">Categories</h1>
+        </div>
+
+        <div class="container categories" id="catogries">
+            <div class="collapse collapse in" id="collapseExample">
+                <div>
+                    <ul class="catogriesRow">
+
+                        <li>
+                            <a onclick="allAds()"><img src="../../assets/img/logo.png" alt=""></a>All Ads
+                        </li>
+
+                        <li>
+                            <a onclick="searchBike()"><img src="../../assets/img/bike.png" alt=""></a>Bikes
+                        </li>
+                        <li>
+                            <a onclick="searchCars()"><img src="../../assets/img/car.png" alt=""></a>Cars
+                        </li>
+                        <li>
+                            <a onclick="searchMobiles()"><img src="../../assets/img/mobile.png" alt=""></a>Mobiles
+                        </li>
+                        <li>
+                            <a onclick="searchFurnitures()"><img src="../../assets/img/furniture.jpg"
+                                    alt=""></a>Furniture
+                        </li>
+                        <li>
+                            <a onclick="searchCrockery()"><img src="../../assets/img/crockery.png" alt=""></a>Crockery
+                        </li>
+                        <li>
+                            <a onclick="searchKids()"><img src="../../assets/img/kids.png" alt=""></a>Kids
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="titleDiv">
+            <h1 class="heading container" id="headingAds"> Ads</h1>
+        </div>
+
+        <div class="allAds" id="allAds">
+
+
+        </div>
+
+        <div class="modal product_view" id="product_view">
+            <div class="modal-dialog">
+                <div class="modal-content" id="ModalMain">
+
+                </div>
+            </div>
+
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+        <script src="./Home.js"></script>
+</body>
+
+</html>
