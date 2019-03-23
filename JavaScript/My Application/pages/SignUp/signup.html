@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Sign Up</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div class="wrapper" style="background-image: url('images/promo-1.jpg');">
+		<div class="inner">
+			<div class="image-holder">
+				<img src="images/signup-image.jpg" alt="" height="90%;">
+			</div>
+			<div class="form">
+				<h3>Sign Up</h3>
+				<div class="form-wrapper">
+					<input type="text" id="username" placeholder="Username" class="form-control">
+					<i class="zmdi zmdi-account"></i>
+				</div>
+				<div class="form-wrapper">
+					<input type="text" id="email" placeholder="Email Address" class="form-control">
+					<i class="zmdi zmdi-email"></i>
+				</div>
+				<div class="form-wrapper">
+					<select name="" id="gender" class="form-control">
+						<option value="" disabled selected>Gender</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+					<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+				</div>
+				<div class="form-wrapper">
+					<input type="password" id="password" placeholder="Password" class="form-control">
+					<i class="zmdi zmdi-lock"></i>
+				</div>
+				<!-- <div class="form-wrapper">
+						<input type="password" id="con-password" placeholder="Confirm Password" class="form-control">
+						<i class="zmdi zmdi-lock"></i>
+					</div> -->
+				<button onClick="signUp();">Sign Up
+					<i class="zmdi zmdi-arrow-right"></i>
+				</button>
+				<br/>
+				<div>I am already a member ! <a href="../SignIn/signin.html">Sign in</a></div>
+				<div class="col-md-12">
+					<div class="loader" id="loaders"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../../app/app.js"></script>
+</body>
+
+</html>

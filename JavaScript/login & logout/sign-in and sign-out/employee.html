@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <h1>Welcome Employee</h1>
+            <input type="button" class="signOut" onclick="location.replace('Sign-in.html')" value="Sign Out"/>
+        </div>
+        <div>
+            <input type="search" id="input_type" placeholder="Search by Model" onkeyup="search_func();">
+        </div>
+        <div id="home-builder">
+            <h2>Products</h2>
+        </div>
+        <div class="fw-3" id="images">
+			<img src="Images/hp-tower.png" width="200px;" height="150px;"/>
+			<h4>HP Pavilion Desktop</h4>
+            <h5>Rs. 33,900</h5>
+            <input class="sellbutton" type="button" id="sell" onClick="sell();" value="Sell"/>
+		</div>
+		<div class="fw-3" id="images">
+			<img src="Images/hp-laptop.png" width="200px;" height="150px;"/>
+			<h4>HP EliteBook 830</h4>
+            <h5>Rs. 208,100</h5>
+            <input class="sellbutton" type="button" id="sell" onClick="sell();" value="Sell"/>
+		</div>
+		<div class="fw-3" id="images">
+			<img src="Images/hp-printers.png" width="200px;" height="150px;"/>
+			<h4>HP ENVY Photo 7155</h4>
+            <h5>Rs. 11,900</h5>
+            <input class="sellbutton" type="button" id="sell" onClick="sell();" value="Sell"/>
+            <br/><br/><br/>
+		</div>
+		<div class="fw-3" id="images">
+			<img src="Images/hp-mobile.jpg" width="200px;" height="180px;"/>
+			<h4>HP Elite X3</h4>
+            <h5>Rs. 75000</h5>
+            <input class="sellbutton" type="button" id="sell" onClick="sell();" value="Sell"/>
+        </div>
+        <div class="fw-3" id="images">
+            <img src="Images/hp-2in1.png" width="200px;" height="180px;"/>
+            <h4>HP Sprocket 2-In-1</h4>
+            <h5>Rs. 15,900</h5>
+            <input class="sellbutton" type="button" id="sell" onClick="sell();" value="Sell"/>
+        </div>
+        <div class="fw-3" id="images">
+            <img src="Images/hp-keyboard+mouse.jpg" width="200px;" height="180px;"/>
+            <h4>HP Classic Wireless Key0board and Mouse</h4>
+            <h5>Rs. 2,900</h5>
+            <input class="sellbutton" type="button" id="sell" onClick="sell();" value="Sell"/><br/><br/><br/>
+        </div>
+    </div>
+</body>
+    <script src="app.js"></script>
+</html>

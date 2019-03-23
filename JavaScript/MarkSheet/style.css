@@ -1,0 +1,49 @@
+body{
+    background-image: url("2.jpg");
+    font-family: cursive;
+}
+.column {
+    float: left;
+}
+.back{
+    background-color: green;
+    width: 40%;
+    height: 580px;
+    border-radius: 5%;
+    margin: 8px 100px;
+}
+.inside{
+    background-color: white;
+    width: 80%;
+    height: 470px;
+    margin: 15px 40px;
+    padding: 40px 12px;
+    border-radius: 5%;
+}
+.logo-left{
+    padding-bottom: 5px;
+}
+.heading{
+    color:green;
+    text-align: center;
+    text-decoration: underline;
+}
+.text{
+    color: green;
+    padding: 10px 20px;
+}
+.input{
+    text-decoration: underline;
+    color: blue;
+}
+.form{
+    width: 40%;
+    color: blue;
+    font-weight: bold;
+    padding: 130px 30px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

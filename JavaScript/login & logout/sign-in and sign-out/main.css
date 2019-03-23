@@ -1,0 +1,83 @@
+body{
+    margin: 0px auto;
+    padding: 0px;
+    font-family: cursive;
+}
+.header{
+    margin: 0px;
+    background-color: black;
+    color: white;
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+#input_type{
+    margin: 15px 200px;
+    padding: 15px;
+    width: 70%;
+    height: 10px;
+    border-radius: 10px;
+}
+#home-builder
+{
+	padding:0px 100px 20px 70px;	
+	height:52px;
+    color:black;
+    text-decoration: underline;
+}
+#images
+{
+	width:350px;
+    height:300px;
+    padding-top: 0px;
+	padding-left:50px;
+    text-align:center;
+}
+.fw-3{
+    width: 25%;
+    float: left;
+    padding: 0px;
+}
+.fw-5{
+    width: 60%;
+    float: left;
+    padding: 0px;
+}
+.addbutton{
+    float: left;
+    margin: 15px;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    font-family: cursive;
+}
+.editbutton{
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+    font-family: cursive;
+}
+.delbutton{
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    font-family: cursive;
+}
+.sellbutton{
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+    font-family: cursive;
+}
+.signOut{
+    margin: 15px;
+    float: right;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    background-color: royalblue;
+    color: white;
+    font-family: cursive;
+}

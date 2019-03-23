@@ -1,0 +1,25 @@
+function submit(){
+    var studentName = document.getElementById("sn").value;
+    document.getElementById("tsn").innerHTML =studentName;
+
+    var rollNo = document.getElementById("rn").value;
+    document.getElementById("trn").innerHTML = rollNo;
+
+    var fatherName = document.getElementById("fn").value;
+    document.getElementById("tfn").innerHTML = fatherName;
+    
+    var html = document.getElementById('mkhtml').value;
+    html = parseInt(html);
+    document.getElementById("tmkhtml").innerHTML = html + "%";
+
+    var css1 = document.getElementById('mkcss1').value;
+    css1 = parseInt(css1);
+    document.getElementById("tmkcss1").innerHTML = css1 + "%";
+
+    var css2 = document.getElementById('mkcss2').value;
+    css2 = parseInt(css2);
+    document.getElementById("tmkcss2").innerHTML = css2 + "%";
+
+    var avg = Math.round((html + css1 + css2)/3);
+    document.getElementById("avg").innerHTML = avg + "%";
+}
