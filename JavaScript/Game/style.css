@@ -1,0 +1,29 @@
+body{
+    font-family: cursive; 
+}
+.heading{
+    color: blue;
+    text-decoration: underline;
+}
+.table{
+    text-align: center;
+    border: 1px solid red;
+    border-collapse: separate; 
+    border-spacing: 5px;
+    height: 400px;
+    width: 380px;
+    background-color: black; 
+    border-radius: 10px;   
+}
+.td{
+    background-color: yellow;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 100px;
+    margin: 0px;
+    height: 100px;
+    width: 100px;
+    transition: 1s;
+    font-weight: bold;
+    font-size: 50px;
+}   

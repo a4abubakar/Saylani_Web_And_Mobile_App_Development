@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="../../assets/css/styles.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="../../assets/css/form.css">
+    <link rel="shortcut icon" href="../../assets/img/campus_logo.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <title>Add Student</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Campus Recruitment System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="JavaScript:void(0);">Add Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./addCompany.html">Add Company</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ViewStudent.html">View Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ViewCompany.html">View Company</a>
+                </li>
+            </ul>
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onClick="signOut();">Log Out</button>
+        </div>
+    </nav>
+    <div style="text-align:center">
+        <h1>Add Student</h1>
+    </div>
+    <div class="wrapper">
+        <div class="inner">
+            <div class="image-holder">
+                <img src="../../assets/img/Teacher-icon.png" alt="" height="90%;">
+            </div>
+            <div class="form">
+                <div class="form-wrapper">
+                    <input type="text" id="username" placeholder="Username" class="form-control">
+                    <span id="nameErr"></span>
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" id="email" placeholder="Email Address" class="form-control">
+                    <span id="emailErr"></span>
+                </div>
+                <div class="form-wrapper">
+                    <input type="date" id="dob" placeholder="Date of Birth" class="form-control">
+                    <span id="dobErr"></span>
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" id="number" placeholder="Phone Number" class="form-control">
+                    <span id="numErr"></span>
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" id="address" placeholder="Address" class="form-control">
+                    <span id="addErr"></span>
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" id="enroll_no" placeholder="Enrollement Number" class="form-control">
+                    <span id="enrolErr"></span>
+                </div>
+                <div class="form-wrapper">
+                    <input type="number" id="age" placeholder="Age" class="form-control">
+                    <span id="ageErr"></span>
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" id="education" placeholder="Education" class="form-control">
+                    <span id="eduErr"></span>
+                </div>
+                <div class="form-wrapper">
+                    <select name="" id="gender" class="form-control">
+                        <option value="Gender" disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <span id="genErr"></span>
+                </div>
+                <div class="form-wrapper">
+                    <input type="file" id="image" placeholder="Image" class="form-control">
+                    <span id="fileErr"></span>
+                </div>
+                <div class="form-wrapper">
+                    <input type="password" id="password" placeholder="Password" class="form-control">
+                    <span id="passErr"></span>
+                </div>
+                <button onClick="addStudent();">Add Student
+                </button>
+                <br />
+                <div class="col-md-12">
+                    <div class="loader" id="loaders"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../../assets/js/admin/addStudent.js"></script>
+</body>
+
+</html>

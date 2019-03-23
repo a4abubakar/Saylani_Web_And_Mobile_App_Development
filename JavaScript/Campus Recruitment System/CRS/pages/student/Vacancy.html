@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="shortcut icon" href="../../assets/img/campus_logo.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <title>View Company</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Campus Recruitment System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  active" href="JavaScript:void(0);">Vacancies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ViewCompany.html">View Company</a>
+                </li>
+            </ul>
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onClick="signOut();">Log Out</button>
+        </div>
+    </nav>
+    <div style="text-align:center">
+        <h1>Vacancies</h1>
+    </div>
+    <div class="card-group" id="vacancies" style="text-align:center"></div>
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../../assets/js/student/vacancy.js"></script>
+</body>
+
+</html>

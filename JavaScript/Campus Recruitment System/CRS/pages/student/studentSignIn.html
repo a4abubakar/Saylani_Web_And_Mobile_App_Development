@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Sign In</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="../fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/css/form.css">
+	<link rel="shortcut icon" href="../../assets/img/campus_logo.png" />
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+
+	<div class="wrapper" style="background-image: url('../../assets/img/promo-1.jpg');">
+		<div class="inner">
+			<div class="image-holder">
+				<img src="../../assets/img/login-admin.gif" alt="SignIn Image">
+			</div>
+			<div class="form">
+				<h3>Sign In</h3>
+				<div class="form-wrapper">
+					<input type="text" id="email" placeholder="Email Address" class="form-control">
+					<i class="zmdi zmdi-email"></i>
+				</div>
+				<div class="form-wrapper">
+					<input type="password" id="password" placeholder="Password" class="form-control">
+					<i class="zmdi zmdi-lock"></i>
+				</div>
+				<button onClick="signIn();">Sign In
+					<i class="zmdi zmdi-arrow-right"></i>
+				</button>
+				<br />
+				<div>Create Your Acoount ! <a href="./studentSignup.html">Sign Up</a></div>
+				<div class="col-md-12">
+					<div class="loader" id="loaders"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../../assets/js/student/studentAuth.js"></script>
+</body>
+
+</html>

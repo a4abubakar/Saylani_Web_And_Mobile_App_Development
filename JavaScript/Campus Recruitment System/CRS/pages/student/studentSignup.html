@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Sign Up</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- <link rel="stylesheet" href="../fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/css/form.css">
+	<link rel="shortcut icon" href="../../assets/img/campus_logo.png" />
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+
+	<div class="wrapper" class="background-image" style="background-image: url(../../assets/img/promo-1.jpg);">
+		<div class="inner">
+			<div class="image-holder">
+				<img src="../../assets/img/login-admin.gif" alt="" height="90%;">
+			</div>
+			<div class="form">
+				<h3>Sign Up</h3>
+				<div class="form-wrapper">
+					<input type="text" id="username" placeholder="Username" class="form-control">
+					<span id="nameErr"></span>
+				</div>
+				<div class="form-wrapper">
+					<input type="text" id="email" placeholder="Email Address" class="form-control">
+					<span id="emailErr"></span>
+				</div>
+				<div class="form-wrapper">
+					<input type="date" id="dob" placeholder="Date of Birth" class="form-control">
+					<span id="dobErr"></span>
+				</div>
+				<div class="form-wrapper">
+					<input type="text" id="number" placeholder="Phone Number" class="form-control">
+					<span id="numErr"></span>
+				</div>
+				<div class="form-wrapper">
+					<input type="text" id="address" placeholder="Address" class="form-control">
+					<span id="addErr"></span>
+				</div>
+				<div class="form-wrapper">
+					<input type="text" id="enroll_no" placeholder="Enrollement Number" class="form-control">
+					<span id="enrolErr"></span>
+				</div>
+				<div class="form-wrapper">
+					<input type="number" id="age" placeholder="Age" class="form-control">
+					<span id="ageErr"></span>
+				</div>
+				<div class="form-wrapper">
+					<input type="text" id="education" placeholder="Education" class="form-control">
+					<span id="eduErr"></span>
+				</div>
+				<div class="form-wrapper">
+					<select name="" id="gender" class="form-control">
+						<option value="Gender" disabled selected>Gender</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+					<span id="genErr"></span>
+				</div>
+				<div class="form-wrapper">
+					<input type="file" id="image" placeholder="Image" class="form-control">
+					<span id="fileErr"></span>
+				</div>
+				<div class="form-wrapper">
+					<input type="password" id="password" placeholder="Password" class="form-control">
+					<span id="passErr"></span>
+				</div>
+				<button onClick="signUp();">Sign Up
+				</button>
+				<br />
+				<div>I am already a member ! <a href="./studentSignIn.html">Sign in</a></div>
+				<div class="col-md-12">
+					<div class="loader" id="loaders"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../../assets/js/student/studentAuth.js"></script>
+</body>
+
+</html>
