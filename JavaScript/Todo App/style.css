@@ -1,0 +1,56 @@
+body{
+    margin: 35px;
+    background-image: url("bg.jpg");
+    font-family: 'Audiowide';
+    font-size: 22px;
+}
+.heading{
+    height: 100px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-weight: bold;
+}
+.input{
+    margin: 15px;
+    padding: 15px;
+    width: 80%;
+    height: 10px;
+    border-radius: 10px;
+}
+.add-button{
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Audiowide';
+}
+.rm-button{
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Audiowide';
+}
+.li{
+    padding: 10px 50px;
+    color: white;
+}
+.edit{
+    height: 30px;
+    width: 50px;    
+    align-content: flex-end;
+    padding:0px 5px;
+    float: right; 
+    border-radius: 10px;
+    font-family: 'Audiowide';
+}
+.delete{
+    height: 30px;
+    width: 70px;
+    margin-right: 5px;
+    align-content: flex-end;
+    padding:0px 5px;
+    float: right; 
+    border-radius: 10px;
+    font-family: 'Audiowide';
+}

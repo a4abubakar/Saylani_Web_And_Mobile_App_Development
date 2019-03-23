@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body></body>
+<script>
+    var itemsArray = [{ name: "juice", price: "50", quantity: "3" },
+    { name: "cookie", price: "30", quantity: "9" },
+    { name: "shirt", price: "880", quantity: "1" },
+    { name: "pen", price: "100", quantity: "2" }];
+    for (var key in itemsArray) {
+        for (var key2 in itemsArray[key]) {
+            alert(itemsArray[key][key2]);
+        }
+    } 
+</script>
+</html>

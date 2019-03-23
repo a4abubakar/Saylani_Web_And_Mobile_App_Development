@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    input[type=submit] {
+    width: 100%;
+    background-color: rgb(67, 255, 74);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30px;
+    }
+
+    input[type=submit]:hover {
+    background-color: #4CAF50;
+    }
+    .create{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 80%;
+    margin: 0 auto;
+    }
+    h3
+    {
+    font-family: 'Droid Sans', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    }
+  </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="JavaScript:void(0);">Quiz App</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./addedQuiz.html"><span class="glyphicon glyphicon-log-in"></span> Added Quiz</a></li>
+                    <li><a href="#" onClick="signOut();"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <br/> -->
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Welcome</h1>
+            <!-- <p>The Best Online Testing for Education</p> -->
+        </div>
+    </div>
+
+    <div class="create">
+        <h3>Quiz App</h3>
+        <input type="submit" value="Create Quiz" onClick="createQuiz();">
+    </div>
+    <!-- <footer class="container-fluid text-center">
+        <p>Footer Text</p>
+    </footer> -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../../assets/js/admin/app.js"></script>
+</body>
+
+</html>

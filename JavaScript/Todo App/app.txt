@@ -1,0 +1,80 @@
+var mainDIv = document.getElementById("todo");
+mainDIv.setAttribute("class", "main-div");
+
+var h2 = document.createElement("h1");
+var h2Text = document.createTextNode("Todo App");
+h2.appendChild(h2Text);
+h2.setAttribute("class", "heading");
+mainDIv.appendChild(h2);
+
+var input = document.createElement("input");
+input.setAttribute("class", "input");
+input.setAttribute("type", "text");
+input.setAttribute("id", "input-text")
+input.setAttribute("placeholder", "Enter your text");
+mainDIv.appendChild(input);
+
+var btn = document.createElement("button");
+var btnText = document.createTextNode("Add");
+btn.appendChild(btnText);
+btn.setAttribute("class", "add-button");
+btn.setAttribute("onClick", "add();");
+mainDIv.appendChild(btn);
+
+var btnRemove = document.createElement("button");
+var btnRemoveText = document.createTextNode("Remove All");
+btnRemove.appendChild(btnRemoveText);
+btnRemove.setAttribute("class", "rm-button");
+btnRemove.setAttribute("onClick", "remove_all();");
+mainDIv.appendChild(btnRemove);
+
+var ulDiv = document.createElement("div");
+ulDiv.setAttribute("id", "ul");
+var ul = document.createElement("ul");
+ul.setAttribute("id", "ul-li");
+
+function add(){
+    var addWork = document.getElementById("input-text").value;
+    if(addWork !== ""){
+    var li = document.createElement("li");
+    var liText = document.createTextNode(addWork);
+    li.appendChild(liText);
+    li.setAttribute("id", "li");
+    li.setAttribute("class", "li");
+    ulDiv.appendChild(li);
+    mainDIv.appendChild(ulDiv);
+    document.getElementById("input-text").value="";
+
+    var editBtn = document.createElement("button");
+    var editBtnText = document.createTextNode("Edit");
+    editBtn.appendChild(editBtnText);
+    editBtn.setAttribute("class", "edit");
+    editBtn.setAttribute("onClick", "editItem()");
+    li.appendChild(editBtn);
+    ulDiv.appendChild(li);
+    mainDIv.appendChild(ulDiv); 
+
+    editBtn.addEventListener('click',function(){
+        var updateWork=prompt('Update Your Work', addWork);
+        var txt=document.createTextNode(updateWork);
+        li.replaceChild(txt,li.childNodes[0]);
+    });
+
+    var delBtn = document.createElement("button");
+    var delBtnText = document.createTextNode("Delete");
+    delBtn.appendChild(delBtnText);
+    delBtn.setAttribute("class", "delete");
+    delBtn.setAttribute("id", "abc")
+    delBtn.setAttribute("onClick", "deleteItem(event)");
+    li.appendChild(delBtn)
+    ulDiv.appendChild(li);
+    mainDIv.appendChild(ulDiv);
+    delBtn.addEventListener("click",function(){
+        delBtn.parentNode.remove(); 
+    });
+    }
+}
+
+function remove_all(){
+    document.getElementById("ul").innerHTML = " ";
+}

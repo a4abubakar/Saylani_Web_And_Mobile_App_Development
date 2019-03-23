@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Create Quiz</title>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="JavaScript:void(0);">Quiz App</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../../pages/admin/Home.html"><span class="glyphicon glyphicon-home"></span> Go to Home</a></li>
+                    <li><a href="#" onClick="signOut();"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h2 style="text-align:center;" id="quiz">Create Quiz</h2>
+
+    <div class="full-div" id="old-div">
+        <div class="container">
+            <label for="quizName"><b>Quiz Name</b></label>
+            <input type="text" placeholder="Enter Quiz Name" id="quizName" required>
+            <label for="quizSubName"><b>Quiz Sub Name</b></label>
+            <input type="text" placeholder="Enter Quiz Sub Name" id="quizSubName" required>
+            <label for="duration"><b>Duration</b></label>
+            <input type="text" placeholder="Enter Duration (In Minutes)" id="duration" required>
+            <label for="proctoring"><b>Proctoring Key</b></label>
+            <input type="text" placeholder="Enter Proctoring Key" id="proctoring" required>
+            <label for="totalMarks"><b>Total Marks</b></label>
+            <input type="text" placeholder="Enter Total Marks" id="totalMarks" required>
+            <label for="passingMarks"><b>Passing Marks</b></label>
+            <input type="text" placeholder="Enter Passing Marks Marks" id="passingMarks" required>
+            <label for="description"><b>Description</b></label><br>
+            <textarea id="description" id="" cols="159" rows="2" placeholder="Description"></textarea>
+            <button type="submit" onClick="addQuiz();">Submit</button>
+        </div>
+    </div>
+    <div class="full-div" id="new-div" style="display:none;"></div>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../../assets/js/admin/createQuiz.js"></script>
+</body>
+
+</html>
